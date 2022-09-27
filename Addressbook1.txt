@@ -1,0 +1,26 @@
+
+
+create database AddressBookDB;
+Query OK, 1 row affected (0.01 sec)
+ 
+use AddressBookDB
+Database changed
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| addressbookdb      |
+| company_info       |
+| employee           |
+| employeee_data     |
+| information_schema |
+| mysql              |
+| payroll_service    |
+| performance_schema |
+| sakila             |
+| student            |
+| sys                |
+| world              |
++--------------------+
+12 rows in set (0.01 sec)
