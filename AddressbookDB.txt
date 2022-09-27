@@ -127,3 +127,27 @@ mysql> select first_name , last_name from addressBook_DB where city = 'tumsar' o
 | Yash       | Pathak    |
 +------------+-----------+
 2 rows in set (0.00 sec)
+
+mysql> alter table AddressBook_DB add addressBook_Name varchar(30);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table AddressBook_DB add addressBook_Type varchar(30);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> update addressBook_DB set addressBook_Name = 'family address book', addressBook_Type = 'Family' where first_name='Bharat';
+
+mysql> update addressBook_DB set addressBook_Name = 'friends address book', addressBook_Type = 'Friends' where first_name='Yash';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from addressbook_Db
+    -> ;
++------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+----------------------+------------------+
+| first_name | last_name | address       | city   | state       | zip    | phone_number | email                     | addressBook_Name     | addressBook_Type |
++------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+----------------------+------------------+
+| Yash       | Pathak    | Andheri       | Tumsar | maharashtra | 441207 | 7778925464   | yashgharde07@gmail.com    | friends address book | Friends          |
+| Bharat     | Kapoor    | Shivaji Nagar | Tumsar | maharashtra | 441912 | 7559236425   | bharatpathak099@gmail.com | family address book  | Family           |
++------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+----------------------+------------------+
+2 rows in set (0.00 sec)
