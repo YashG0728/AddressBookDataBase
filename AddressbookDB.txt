@@ -51,3 +51,17 @@ mysql> describe AddressBook_DB
 | email        | varchar(50)  | NO   |     | NULL    |       |
 +--------------+--------------+------+-----+---------+-------+
 8 rows in set (0.00 sec)
+
+mysql> insert into AddressBook_DB values('Yash','Gharde','Vinoba Nagar','Tumsar','maharashtra',441912,'7778925464','yashgharde07@gmail.com'),('Bharat', 'Pathak','Shivaji Nagar','Tumsar','maharashtra',441912,'7559236425','bharatpathak099@gmail.com'),('Mohit', 'Pathak','Shivaji Nagar','Tumsar','maharashtra',441912,'9156845912','pathakmohit0766@gmail.com');
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> select * from AddressBook_DB;
++------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+
+| first_name | last_name | address       | city   | state       | zip    | phone_number | email                     |
++------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+
+| Yash       | Gharde    | Vinoba Nagar  | Tumsar | maharashtra | 441912 | 7778925464   | yashgharde07@gmail.com    |
+| Bharat     | Pathak    | Shivaji Nagar | Tumsar | maharashtra | 441912 | 7559236425   | bharatpathak099@gmail.com |
+| Mohit      | Pathak    | Shivaji Nagar | Tumsar | maharashtra | 441912 | 9156845912   | pathakmohit0766@gmail.com |
++------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+
+3 rows in set (0.00 sec)
