@@ -182,3 +182,16 @@ mysql> SELECT * FROM addressbook_db
 | Yash       | Pathak    | Andheri       | Tumsar | maharashtra | 441207 | 7778925464   | yashgharde07@gmail.com     | friends address book | Friends          |
 +------------+-----------+---------------+--------+-------------+--------+--------------+----------------------------+----------------------+------------------+
 5 rows in set (0.00 sec)
+
+mysql> select * from addressbook_db
+    -> Order by city;
++------------+-----------+---------------+--------+-------------+--------+--------------+----------------------------+----------------------+------------------+
+| first_name | last_name | address       | city   | state       | zip    | phone_number | email                      | addressBook_Name     | addressBook_Type |
++------------+-----------+---------------+--------+-------------+--------+--------------+----------------------------+----------------------+------------------+
+| Pranav     | Gharde    | Bandra        | Mumbai | Maharastra  | 441915 | 9960256554   | pranavgharde31@gmail.com   | family address book  | family           |
+| Himanshu   | Gharde    | Bandra        | Mumbai | Maharastra  | 441915 | 9960565554   | Hiamnshugharde05@gmail.com | family address book  | family           |
+| Yash       | Pathak    | Andheri       | Tumsar | maharashtra | 441207 | 7778925464   | yashgharde07@gmail.com     | friends address book | Friends          |
+| Bharat     | Kapoor    | Shivaji Nagar | Tumsar | maharashtra | 441912 | 7559236425   | bharatpathak099@gmail.com  | family address book  | Family           |
+| Mohit      | Pathak    | Shivaji Nagar | Tumsar | Maharastra  | 441912 | 7582565554   | mohitpathak06@gmail.com    | friends address book | friends          |
++------------+-----------+---------------+--------+-------------+--------+--------------+----------------------------+----------------------+------------------+
+5 rows in set (0.00 sec)
